@@ -23,10 +23,10 @@ header{
 }
 
 #name{
+    float: left;
+    padding: 0 30px;
     background-color: #4aaaa5;
     color: #ffffff;
-    width: 22%;
-    float: left;
 }
 
 h1{
@@ -37,9 +37,15 @@ nav{
     float: right;
 }
 
-nav, #bio{
+nav, #contentMain{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
+}
+
+#headerWrapper::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 
 #middleNavSpan{
@@ -59,14 +65,73 @@ nav, #bio{
     border: 2px solid #dddddd;
 }
 
-#about{
+#contentHeader{
     color: #4aaaa5;
     padding-bottom: 30px;
     margin-bottom: 20px;
     border-bottom: 3px solid #dddddd;
 }
 
-img{
+#theStevester{
     float: left;
     margin-right: 20px;
 }
+
+#fruityPebbles{
+    background: url(../images/fruitypebbles.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    margin-right: 84px;
+}
+
+#pacMental{
+    background: url(../images/pacmental.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+}
+
+#theRealStevester{
+    background: url(../images/thestevester.jpg);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    margin-left: 247px;
+}
+
+#fruityPebbles, #pacMental, #theRealStevester{
+    width: 400px;
+    height: 430px;
+    background-color: #000000;
+}
+
+#fruityPebbles, #pacMental{
+    margin-bottom: 84px;
+}
+
+.portBox{ 
+    position: relative;
+    float: left;
+    border: 3px solid #cccccc;
+    border-radius: 50px; 
+    opacity: .5;
+}
+
+.portBox:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.portFooter{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 30px;   
+    color: #ffffff;
+    text-align: center;
+}
+
+#contentMain::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
