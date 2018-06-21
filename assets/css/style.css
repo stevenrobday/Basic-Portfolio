@@ -11,6 +11,7 @@ header{
     background-color: #ffffff;
     height:  80px;
     border-bottom: 3px solid #cccccc;
+    width: 100%;
 }
 
 #headerWrapper{
